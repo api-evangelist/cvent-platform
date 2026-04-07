@@ -1,127 +1,128 @@
 name: Cvent Platform
-description: 'Cvent is a leading meetings, events, and hospitality technology provider with  more than 4,800 employees and ~22,000 customers worldwide. The Cvent Platform  provides event management software, hospitality cloud solutions, and attendee  engagement tools to help organizations plan, promote, execute, and analyze events.
-
-  '
+description: >-
+  Cvent is a leading meetings, events, and hospitality technology provider with more
+  than 4,800 employees and ~22,000 customers worldwide. The Cvent Platform provides
+  event management software, hospitality cloud solutions, and attendee engagement
+  tools to help organizations plan, promote, execute, and analyze events.
 image: https://www.cvent.com/sites/default/files/cvent-logo.png
 url: https://www.cvent.com
 created: '2024-01-01'
 modified: '2026-03-16'
 specificationVersion: '0.16'
 tags:
-- Events
-- Event Management
-- Meetings
-- Hospitality
-- Conferences
-- Registration
-- Venue Management
-apis:
-- name: Cvent Event Management API
-  description: 'Core API for managing events, including event creation, registration,  attendee management, and event analytics.
-
-    '
-  image: https://www.cvent.com/sites/default/files/cvent-logo.png
-  humanURL: https://api.cvent.com/documentation/
-  baseURL: https://api.cvent.com
-  tags:
   - Events
+  - Event Management
+  - Meetings
+  - Hospitality
+  - Conferences
   - Registration
-  - Attendees
-  properties:
-  - type: Documentation
-    url: https://api.cvent.com/documentation/
-  - type: OpenAPI
-    url: https://api.cvent.com/openapi/event-management.json
+  - Venue Management
+apis:
+  - name: Cvent Event Management API
+    description: >-
+      Core API for managing events, including event creation, registration, attendee
+      management, and event analytics.
+    image: https://www.cvent.com/sites/default/files/cvent-logo.png
+    humanURL: https://api.cvent.com/documentation/
+    baseURL: https://api.cvent.com
+    tags:
+      - Events
+      - Registration
+      - Attendees
+    properties:
+      - type: Documentation
+        url: https://api.cvent.com/documentation/
+      - type: OpenAPI
+        url: https://api.cvent.com/openapi/event-management.json
+      - type: Authentication
+        url: https://api.cvent.com/documentation/authentication
+      - type: RateLimits
+        url: https://api.cvent.com/documentation/rate-limits
+  - name: Cvent Registration API
+    description: >-
+      API for managing event registrations, invitations, confirmations, and registration
+      data.
+    image: https://www.cvent.com/sites/default/files/cvent-logo.png
+    humanURL: https://api.cvent.com/documentation/registration
+    baseURL: https://api.cvent.com/registration
+    tags:
+      - Registration
+      - Invitations
+      - Attendees
+    properties:
+      - type: Documentation
+        url: https://api.cvent.com/documentation/registration
+      - type: OpenAPI
+        url: https://api.cvent.com/openapi/registration.json
+  - name: Cvent Survey API
+    description: >-
+      API for creating and managing event surveys, collecting feedback, and analyzing
+      survey responses.
+    image: https://www.cvent.com/sites/default/files/cvent-logo.png
+    humanURL: https://api.cvent.com/documentation/survey
+    baseURL: https://api.cvent.com/survey
+    tags:
+      - Surveys
+      - Feedback
+      - Analytics
+    properties:
+      - type: Documentation
+        url: https://api.cvent.com/documentation/survey
+      - type: OpenAPI
+        url: https://api.cvent.com/openapi/survey.json
+  - name: Cvent Venue Sourcing API
+    description: >-
+      API for venue search, RFP management, and connecting with venues for event planning.
+    image: https://www.cvent.com/sites/default/files/cvent-logo.png
+    humanURL: https://api.cvent.com/documentation/venue-sourcing
+    baseURL: https://api.cvent.com/venue-sourcing
+    tags:
+      - Venues
+      - RFP
+      - Sourcing
+    properties:
+      - type: Documentation
+        url: https://api.cvent.com/documentation/venue-sourcing
+      - type: OpenAPI
+        url: https://api.cvent.com/openapi/venue-sourcing.json
+  - name: Cvent Attendee Hub API
+    description: >-
+      API for mobile and web attendee experiences, including agendas, networking,
+      and engagement features.
+    image: https://www.cvent.com/sites/default/files/cvent-logo.png
+    humanURL: https://api.cvent.com/documentation/attendee-hub
+    baseURL: https://api.cvent.com/attendee-hub
+    tags:
+      - Attendees
+      - Mobile
+      - Engagement
+      - Networking
+    properties:
+      - type: Documentation
+        url: https://api.cvent.com/documentation/attendee-hub
+      - type: OpenAPI
+        url: https://api.cvent.com/openapi/attendee-hub.json
+common:
+  - type: Developer Portal
+    url: https://developer.cvent.com
   - type: Authentication
     url: https://api.cvent.com/documentation/authentication
-  - type: RateLimits
-    url: https://api.cvent.com/documentation/rate-limits
-- name: Cvent Registration API
-  description: 'API for managing event registrations, invitations, confirmations,  and registration data.
-
-    '
-  image: https://www.cvent.com/sites/default/files/cvent-logo.png
-  humanURL: https://api.cvent.com/documentation/registration
-  baseURL: https://api.cvent.com/registration
-  tags:
-  - Registration
-  - Invitations
-  - Attendees
-  properties:
-  - type: Documentation
-    url: https://api.cvent.com/documentation/registration
-  - type: OpenAPI
-    url: https://api.cvent.com/openapi/registration.json
-- name: Cvent Survey API
-  description: 'API for creating and managing event surveys, collecting feedback,  and analyzing survey responses.
-
-    '
-  image: https://www.cvent.com/sites/default/files/cvent-logo.png
-  humanURL: https://api.cvent.com/documentation/survey
-  baseURL: https://api.cvent.com/survey
-  tags:
-  - Surveys
-  - Feedback
-  - Analytics
-  properties:
-  - type: Documentation
-    url: https://api.cvent.com/documentation/survey
-  - type: OpenAPI
-    url: https://api.cvent.com/openapi/survey.json
-- name: Cvent Venue Sourcing API
-  description: 'API for venue search, RFP management, and connecting with venues  for event planning.
-
-    '
-  image: https://www.cvent.com/sites/default/files/cvent-logo.png
-  humanURL: https://api.cvent.com/documentation/venue-sourcing
-  baseURL: https://api.cvent.com/venue-sourcing
-  tags:
-  - Venues
-  - RFP
-  - Sourcing
-  properties:
-  - type: Documentation
-    url: https://api.cvent.com/documentation/venue-sourcing
-  - type: OpenAPI
-    url: https://api.cvent.com/openapi/venue-sourcing.json
-- name: Cvent Attendee Hub API
-  description: 'API for mobile and web attendee experiences, including agendas,  networking, and engagement features.
-
-    '
-  image: https://www.cvent.com/sites/default/files/cvent-logo.png
-  humanURL: https://api.cvent.com/documentation/attendee-hub
-  baseURL: https://api.cvent.com/attendee-hub
-  tags:
-  - Attendees
-  - Mobile
-  - Engagement
-  - Networking
-  properties:
-  - type: Documentation
-    url: https://api.cvent.com/documentation/attendee-hub
-  - type: OpenAPI
-    url: https://api.cvent.com/openapi/attendee-hub.json
-common:
-- type: Developer Portal
-  url: https://developer.cvent.com
-- type: Authentication
-  url: https://api.cvent.com/documentation/authentication
-- type: Getting Started
-  url: https://developer.cvent.com/getting-started
-- type: Webhooks
-  url: https://api.cvent.com/documentation/webhooks
-- type: Status
-  url: https://status.cvent.com
-- type: Support
-  url: https://support.cvent.com
-- type: Terms of Service
-  url: https://www.cvent.com/en/terms-of-service
-- type: Privacy Policy
-  url: https://www.cvent.com/en/privacy-policy
-- type: Blog
-  url: https://blog.cvent.com
-- type: Contact
-  url: https://www.cvent.com/en/contact
+  - type: Getting Started
+    url: https://developer.cvent.com/getting-started
+  - type: Webhooks
+    url: https://api.cvent.com/documentation/webhooks
+  - type: Status
+    url: https://status.cvent.com
+  - type: Support
+    url: https://support.cvent.com
+  - type: Terms of Service
+    url: https://www.cvent.com/en/terms-of-service
+  - type: Privacy Policy
+    url: https://www.cvent.com/en/privacy-policy
+  - type: Blog
+    url: https://blog.cvent.com
+  - type: Contact
+    url: https://www.cvent.com/en/contact
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
