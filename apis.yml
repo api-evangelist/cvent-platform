@@ -10,11 +10,11 @@ created: '2024-01-01'
 modified: '2026-03-16'
 specificationVersion: '0.16'
 tags:
-  - Events
-  - Event Management
-  - Meetings
-  - Hospitality
   - Conferences
+  - Event Management
+  - Events
+  - Hospitality
+  - Meetings
   - Registration
   - Venue Management
 apis:
@@ -26,9 +26,9 @@ apis:
     humanURL: https://api.cvent.com/documentation/
     baseURL: https://api.cvent.com
     tags:
+      - Attendees
       - Events
       - Registration
-      - Attendees
     properties:
       - type: Documentation
         url: https://api.cvent.com/documentation/
@@ -46,9 +46,9 @@ apis:
     humanURL: https://api.cvent.com/documentation/registration
     baseURL: https://api.cvent.com/registration
     tags:
-      - Registration
-      - Invitations
       - Attendees
+      - Invitations
+      - Registration
     properties:
       - type: Documentation
         url: https://api.cvent.com/documentation/registration
@@ -62,9 +62,9 @@ apis:
     humanURL: https://api.cvent.com/documentation/survey
     baseURL: https://api.cvent.com/survey
     tags:
-      - Surveys
-      - Feedback
       - Analytics
+      - Feedback
+      - Surveys
     properties:
       - type: Documentation
         url: https://api.cvent.com/documentation/survey
@@ -77,9 +77,9 @@ apis:
     humanURL: https://api.cvent.com/documentation/venue-sourcing
     baseURL: https://api.cvent.com/venue-sourcing
     tags:
-      - Venues
       - RFP
       - Sourcing
+      - Venues
     properties:
       - type: Documentation
         url: https://api.cvent.com/documentation/venue-sourcing
@@ -94,8 +94,8 @@ apis:
     baseURL: https://api.cvent.com/attendee-hub
     tags:
       - Attendees
-      - Mobile
       - Engagement
+      - Mobile
       - Networking
     properties:
       - type: Documentation
