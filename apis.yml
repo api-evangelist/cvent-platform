@@ -1,6 +1,6 @@
 aid: cvent-platform
 name: Cvent Platform
-x-type: company
+kind: company
 description: >-
   Cvent is a leading meetings, events, and hospitality technology
   provider serving more than 22,000 customers worldwide. The Cvent
@@ -118,7 +118,7 @@ common:
     url: https://api-platform.cvent.com/ea/oauth2/token
   - type: SupportArticles
     url: https://support.cvent.com/
-  - type: Status
+  - type: StatusPage
     url: https://status.cvent.com/
   - type: Pricing
     url: https://www.cvent.com/en/pricing
