@@ -106,6 +106,8 @@ apis:
       - type: PasskeyDocs
         url: https://developers.cvent.com/doc/passkey/
 common:
+  - type: GitHubOrganization
+    url: https://github.com/cvent
   - type: Website
     url: https://www.cvent.com/
   - type: DeveloperPortal
