@@ -106,6 +106,12 @@ apis:
       - type: PasskeyDocs
         url: https://developers.cvent.com/doc/passkey/
 common:
+  - type: TrustCenter
+    url: security/cvent-platform-trust-center.yml
+  - type: DomainSecurity
+    url: security/cvent-platform-domain-security.yml
+  - type: Authentication
+    url: authentication/cvent-platform-authentication.yml
   - type: OAuthScopes
     url: scopes/cvent-platform-scopes.yml
   - type: GitHubOrganization
