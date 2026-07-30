@@ -17,7 +17,20 @@ description: >-
   downloads.
 url: >-
   https://raw.githubusercontent.com/api-evangelist/cvent-platform/refs/heads/main/apis.yml
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+accessModel:
+  pricing: freemium
+  onboarding: self-serve
+  trial: false
+  try_now: true
+  public: false
+  label: Freemium · Self-serve signup
+  confidence: high
+  source:
+  - plans
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/cvent-platform.png
 type: Index
 access: 3rd-Party
 position: Consuming
@@ -43,68 +56,134 @@ tags:
   - Venue Management
   - Virtual Events
 apis:
-  - aid: cvent-platform:rest-api
-    name: Cvent Platform REST API
-    description: >-
-      The Cvent Platform REST API is the unified RESTful interface
-      across the Event Cloud product line, providing programmatic
-      access to events, contacts, registrations, attendees, sessions,
-      speakers, exhibitors, surveys, webhooks, and Attendee Hub
-      resources. The API uses OAuth 2.0 client credentials. Authorization
-      code flow is available to planner administrators. Developers can
-      download the OpenAPI specification from the API reference.
-    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
-    humanURL: https://developers.cvent.com/docs/rest-api/overview
-    baseURL: https://api-platform.cvent.com
-    tags:
-      - Attendees
-      - Contacts
-      - Events
-      - OAuth 2.0
-      - Registration
-      - REST
-      - Sessions
-      - Surveys
-      - Webhooks
-    properties:
-      - type: Documentation
-        url: https://developers.cvent.com/docs/rest-api/overview
-      - type: Concepts
-        url: https://developers.cvent.com/docs/rest-api
-      - type: Guides
-        url: https://developers.cvent.com/docs/rest-api/guides/rest-guides
-      - type: MigrationGuide
-        url: https://developers.cvent.com/docs/rest-api/migration-guide/benefits
-      - type: RegistrationGuide
-        url: https://developers.cvent.com/docs/rest-api/guides/registration-guide
-      - type: OAuthTokenEndpoint
-        url: https://api-platform.cvent.com/ea/oauth2/token
-  - aid: cvent-platform:passkey-reglink
-    name: Cvent Passkey RegLink API
-    description: >-
-      Passkey RegLink APIs are RESTful JSON APIs (with legacy URL-based
-      and SOAP options) connecting Cvent with external registration and
-      reservation applications. Primary functions include streamlining
-      the hotel reservation process by sending registrant information
-      to Passkey, fetching event details and hotel room availability,
-      retrieving reservation information, and creating, updating, and
-      cancelling registrant hotel reservations.
-    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
-    humanURL: https://developers.cvent.com/docs/passkey/REST/overview
-    baseURL: https://api-platform.cvent.com
-    tags:
-      - Group Bookings
-      - Hotel
-      - Passkey
-      - Reservations
-      - Room Blocks
-    properties:
-      - type: Documentation
-        url: https://developers.cvent.com/docs/passkey/REST/overview
-      - type: GettingStarted
-        url: https://developers.cvent.com/docs/passkey/REST/getting-started
-      - type: PasskeyDocs
-        url: https://developers.cvent.com/doc/passkey/
+- aid: cvent-platform:rest-api
+  name: Cvent Platform REST API
+  description: >-
+    The Cvent Platform REST API is the unified RESTful interface across the Event Cloud product line,
+    providing programmatic access to events, contacts, registrations, attendees, sessions, speakers, exhibitors,
+    surveys, webhooks, and Attendee Hub resources. The API uses OAuth 2.0 client credentials. Authorization
+    code flow is available to planner administrators. Developers can download the OpenAPI specification
+    from the API reference.
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://developers.cvent.com/docs/rest-api/overview
+  baseURL: https://api-platform.cvent.com
+  tags:
+  - Attendees
+  - Contacts
+  - Events
+  - OAuth 2.0
+  - Registration
+  - REST
+  - Sessions
+  - Surveys
+  - Webhooks
+  properties:
+  - type: Documentation
+    url: https://developers.cvent.com/docs/rest-api/overview
+  - type: Concepts
+    url: https://developers.cvent.com/docs/rest-api
+  - type: Guides
+    url: https://developers.cvent.com/docs/rest-api/guides/rest-guides
+  - type: MigrationGuide
+    url: https://developers.cvent.com/docs/rest-api/migration-guide/benefits
+  - type: RegistrationGuide
+    url: https://developers.cvent.com/docs/rest-api/guides/registration-guide
+  - type: OAuthTokenEndpoint
+    url: https://api-platform.cvent.com/ea/oauth2/token
+- aid: cvent-platform:passkey-reglink
+  name: Cvent Passkey RegLink API
+  description: >-
+    Passkey RegLink APIs are RESTful JSON APIs (with legacy URL-based and SOAP options) connecting Cvent
+    with external registration and reservation applications. Primary functions include streamlining the
+    hotel reservation process by sending registrant information to Passkey, fetching event details and
+    hotel room availability, retrieving reservation information, and creating, updating, and cancelling
+    registrant hotel reservations.
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://developers.cvent.com/docs/passkey/REST/overview
+  baseURL: https://api-platform.cvent.com
+  tags:
+  - Group Bookings
+  - Hotel
+  - Passkey
+  - Reservations
+  - Room Blocks
+  properties:
+  - type: Documentation
+    url: https://developers.cvent.com/docs/passkey/REST/overview
+  - type: GettingStarted
+    url: https://developers.cvent.com/docs/passkey/REST/getting-started
+  - type: PasskeyDocs
+    url: https://developers.cvent.com/doc/passkey/
+- aid: cvent-platform:cvent-platform-attendees-api
+  name: Cvent Platform Attendees API
+  description: Event registrations and attendees
+  humanURL: https://developers.cvent.com/docs/rest-api/overview
+  baseURL: https://api-platform.cvent.com
+  tags:
+  - Attendees
+  properties:
+  - type: OpenAPI
+    url: openapi/cvent-platform-attendees-api-openapi.yml
+- aid: cvent-platform:cvent-platform-contacts-api
+  name: Cvent Platform Contacts API
+  description: Contact/address book
+  humanURL: https://developers.cvent.com/docs/rest-api/overview
+  baseURL: https://api-platform.cvent.com
+  tags:
+  - Contacts
+  properties:
+  - type: OpenAPI
+    url: openapi/cvent-platform-contacts-api-openapi.yml
+- aid: cvent-platform:cvent-platform-events-api
+  name: Cvent Platform Events API
+  description: Event lifecycle and configuration
+  humanURL: https://developers.cvent.com/docs/rest-api/overview
+  baseURL: https://api-platform.cvent.com
+  tags:
+  - Events
+  properties:
+  - type: OpenAPI
+    url: openapi/cvent-platform-events-api-openapi.yml
+- aid: cvent-platform:cvent-platform-exhibitors-api
+  name: Cvent Platform Exhibitors API
+  description: Exhibitor management
+  humanURL: https://developers.cvent.com/docs/rest-api/overview
+  baseURL: https://api-platform.cvent.com
+  tags:
+  - Exhibitors
+  properties:
+  - type: OpenAPI
+    url: openapi/cvent-platform-exhibitors-api-openapi.yml
+- aid: cvent-platform:cvent-platform-oauth-api
+  name: Cvent Platform OAuth API
+  description: OAuth 2.0 token issuance
+  humanURL: https://developers.cvent.com/docs/rest-api/overview
+  baseURL: https://api-platform.cvent.com
+  tags:
+  - OAuth
+  properties:
+  - type: OpenAPI
+    url: openapi/cvent-platform-oauth-api-openapi.yml
+- aid: cvent-platform:cvent-platform-sessions-api
+  name: Cvent Platform Sessions API
+  description: Agenda sessions
+  humanURL: https://developers.cvent.com/docs/rest-api/overview
+  baseURL: https://api-platform.cvent.com
+  tags:
+  - Sessions
+  properties:
+  - type: OpenAPI
+    url: openapi/cvent-platform-sessions-api-openapi.yml
+- aid: cvent-platform:cvent-platform-webhooks-api
+  name: Cvent Platform Webhooks API
+  description: Webhook subscriptions
+  humanURL: https://developers.cvent.com/docs/rest-api/overview
+  baseURL: https://api-platform.cvent.com
+  tags:
+  - Webhooks
+  properties:
+  - type: OpenAPI
+    url: openapi/cvent-platform-webhooks-api-openapi.yml
 common:
   - type: AgenticAccess
     url: agentic-access/cvent-platform-agentic-access.yml
