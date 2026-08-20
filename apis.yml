@@ -42,6 +42,24 @@ tags:
   - Conferences
   - Event Management
   - Event Marketing
+  - Event
+  - Hospitality
+  - Hospitality Cloud
+  - Hybrid Events
+  - Meetings
+  - Authentication
+  - Passkey
+  - Registration
+  - REST API
+  - Supplier Network
+  - Surveys
+  - Venue Management
+  - Virtual Events
+tags_raw:
+  - Attendee Hub
+  - Conferences
+  - Event Management
+  - Event Marketing
   - Events
   - Hospitality
   - Hospitality Cloud
@@ -68,6 +86,16 @@ apis:
   humanURL: https://developers.cvent.com/docs/rest-api/overview
   baseURL: https://api-platform.cvent.com
   tags:
+  - Attendees
+  - Contacts
+  - Event
+  - Authentication
+  - Registration
+  - REST
+  - Sessions
+  - Surveys
+  - Webhook
+  tags_raw:
   - Attendees
   - Contacts
   - Events
@@ -140,6 +168,8 @@ apis:
   humanURL: https://developers.cvent.com/docs/rest-api/overview
   baseURL: https://api-platform.cvent.com
   tags:
+  - Event
+  tags_raw:
   - Events
   properties:
   - type: OpenAPI
@@ -160,6 +190,8 @@ apis:
   humanURL: https://developers.cvent.com/docs/rest-api/overview
   baseURL: https://api-platform.cvent.com
   tags:
+  - Authentication
+  tags_raw:
   - OAuth
   properties:
   - type: OpenAPI
@@ -180,6 +212,8 @@ apis:
   humanURL: https://developers.cvent.com/docs/rest-api/overview
   baseURL: https://api-platform.cvent.com
   tags:
+  - Webhook
+  tags_raw:
   - Webhooks
   properties:
   - type: OpenAPI
