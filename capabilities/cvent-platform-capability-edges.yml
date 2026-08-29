@@ -1,0 +1,33 @@
+slug: cvent-platform
+provider: Cvent Platform
+generated_by: planning/capability-mapping/scripts/classify_capabilities.py
+model: claude-opus-5
+frame:
+- Travel & Hospitality
+min_confidence: 0.7
+capability_model:
+  source: https://github.com/vincentmakes/turbo-ea-capabilities
+  license: CC-BY-4.0
+  attribution: Turbo EA Capabilities by Vincent Verdet — Turbo EA, https://github.com/vincentmakes/turbo-ea-capabilities,
+    CC BY 4.0
+  notice: NOTICE
+edge_count: 2
+edges:
+- tag: Contacts
+  spec_file: cvent-platform-contacts-api-openapi.yml
+  capability_id: BC-420.10
+  capability_id_l1: BC-420
+  capability_name: Customer Data Management
+  confidence: 0.7
+  evidence: GET /ea/contacts "List contacts"; POST "Create contact"; schemas ContactList, Contact
+  reason: CRUD over the platform's contact master records, which is customer/contact data management rather
+    than an event-operations activity.
+- tag: Events
+  spec_file: cvent-platform-events-api-openapi.yml
+  capability_id: BC-4110
+  capability_id_l1: BC-4110
+  capability_name: Events & Group Operations Management
+  confidence: 0.7
+  evidence: POST /ea/events "Create event"; POST /ea/events/{eventId}/copy "Copy event"; schema Event
+  reason: Creation and lifecycle management of meetings/conference events in Cvent Event Cloud maps to
+    events and group operations management; the operations are generic CRUD so no sub-capability is named.
